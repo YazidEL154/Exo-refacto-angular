@@ -1,0 +1,11 @@
+<form [formGroup]="connexionForm" (ngSubmit)="connexion()">
+  <div class="form-item">
+    <label for="email">Adresse Mail</label>
+    <input type="email" id="email" formControlName="email" />
+  </div>
+  <div class="form-item">
+    <label for="password">Mot de passe</label>
+    <input type="password" id="password" formControlName="password" />
+  </div>
+  <button type="submit" [disabled]="!connexionForm.valid">Connexion</button>
+</form>

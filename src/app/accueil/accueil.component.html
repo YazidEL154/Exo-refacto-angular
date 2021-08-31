@@ -1,0 +1,23 @@
+<!-- Toolbar -->
+<div class="content" role="main">
+  <!-- Highlight Card -->
+  <app-highlight-card [title]="title"></app-highlight-card>
+
+  <!-- Resources -->
+  <h2>Resources</h2>
+  <p>Here are some links to help you get started:</p>
+
+  <div class="card-container">
+    <app-card
+      [href]="ressource.href"
+      [icon]="ressource.icon"
+      [title]="ressource.title"
+      *ngFor="let ressource of ressources"
+    ></app-card>
+  </div>
+  <!-- Next Steps -->
+  <h2>Next Steps</h2>
+  <p>What do you want to do next with your app?</p>
+  <app-next-steps></app-next-steps>
+  <app-links></app-links>
+</div>
